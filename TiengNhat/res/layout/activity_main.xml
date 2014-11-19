@@ -1,0 +1,750 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layoutFavorite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.333"
+                    android:background="@color/blockcolor2"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="100" >
+
+                    <ImageView
+                        android:id="@+id/btnFavorite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_favorite" />
+
+                    <TextView
+                        android:id="@+id/txtFavorite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3.0dip"
+                        android:tag="100"
+                        android:text="Yêu thích"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.666"
+                    android:background="@color/blockcolor3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="200" >
+
+                    <ImageView
+                        android:id="@+id/btnSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_search" />
+
+                    <TextView
+                        android:id="@+id/txtSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="200"
+                        android:text="Search"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layoutGreeting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.333"
+                    android:background="@color/blockcolor4"
+                    android:gravity="center"
+                    android:onClick="Chaohoiclick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="1" >
+
+                    <ImageView
+                        android:id="@+id/btnGreeting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_salutation" />
+
+                    <TextView
+                        android:id="@+id/txtGreeting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="Chào hỏi"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.333"
+                    android:background="@color/blockcolor1"
+                    android:gravity="center"
+                    android:onClick="NumberClick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="3" >
+
+                    <ImageView
+                        android:id="@+id/btnNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_number" />
+
+                    <TextView
+                        android:id="@+id/txtNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="Numbers"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutEatingOut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.333"
+                    android:background="@color/blockcolor6"
+                    android:gravity="center"
+                    android:onClick="AnuongClick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="8" >
+
+                    <ImageView
+                        android:id="@+id/btnEatingOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_plate7" />
+
+                    <TextView
+                        android:id="@+id/txtEatingOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="8"
+                        android:text="Ăn uống"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/rowAboutApp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250.0dip"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.333"
+                    android:background="@drawable/app_wall"
+                    android:orientation="vertical"
+                    android:paddingBottom="15.0dip"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip"
+                    android:paddingTop="15.0dip" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/txtAppNameLineOne"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:shadowColor="#ff000000"
+                                    android:shadowDx="1.0"
+                                    android:shadowDy="1.0"
+                                    android:shadowRadius="1.0"
+                                    android:text="JAPANESE"
+                                    android:textColor="@color/textcolor"
+                                    android:textSize="25.0sp" />
+
+                                <TextView
+                                    android:id="@+id/txtAppNameLineTwo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:shadowColor="#ff000000"
+                                    android:shadowDx="1.0"
+                                    android:shadowDy="1.0"
+                                    android:shadowRadius="1.0"
+                                    android:text="Talk &amp; Travel"
+                                    android:textColor="@color/textcolor"
+                                    android:textSize="20.0sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="right"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="250.0dip"
+                    android:layout_weight="0.666"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/layoutGeneralConversation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150.0dip"
+                        android:layout_margin="1.0dip"
+                        android:background="@color/blockcolor9"
+                        android:onClick="HoithoaiClick"
+                        android:orientation="vertical"
+                        android:padding="5.0dip"
+                        android:tag="2" >
+
+                        <ImageView
+                            android:id="@+id/btnGeneralConversation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:color/transparent"
+                            android:paddingTop="30dp"
+                            android:src="@drawable/ic_comments16" />
+
+                        <TextView
+                            android:id="@+id/txtGeneralConversation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:tag="2"
+                            android:text="Hội thoại hằng ngày"
+                            android:textColor="@color/textcolor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutTimeandDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100.0dip"
+                        android:layout_margin="1.0dip"
+                        android:background="@color/blockcolor5"
+                        android:gravity="center"
+                        android:onClick="ThoigianClick"
+                        android:orientation="vertical"
+                        android:padding="5.0dip"
+                        android:tag="4" >
+
+                        <ImageView
+                            android:id="@+id/btnTimeandDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_three6" />
+
+                        <TextView
+                            android:id="@+id/txtTimeandDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="4"
+                            android:text="Ngày và giờ"
+                            android:textColor="@color/textcolor" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layoutShopping"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.666"
+                    android:background="@color/blockcolor8"
+                    android:gravity="center"
+                    android:onClick="ShoppingClick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="9" >
+
+                    <ImageView
+                        android:id="@+id/btnShopping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_bag2" />
+
+                    <TextView
+                        android:id="@+id/txtShopping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="9"
+                        android:text="Mua sắm"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutDirectationsPlaces"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.333"
+                    android:background="@color/blockcolor10"
+                    android:gravity="center_vertical"
+                    android:onClick="DirectationsPlacesClick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="5" >
+
+                    <ImageView
+                        android:id="@+id/btnDirectationsPlaces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_map49" />
+
+                    <TextView
+                        android:id="@+id/txtDirectationsPlaces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="5"
+                        android:text="Phương hướng &amp; Địa điểm"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/layoutAccommodation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100.0dip"
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="0.333"
+                        android:background="@color/blockcolor6"
+                        android:gravity="center"
+                        android:onClick="AccommodationClick"
+                        android:orientation="vertical"
+                        android:padding="5.0dip"
+                        android:tag="7" >
+
+                        <ImageView
+                            android:id="@+id/btnAccommodation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_person193" />
+
+                        <TextView
+                            android:id="@+id/txtAccommodation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:tag="7"
+                            android:text="Địa điểm nghỉ ngơi"
+                            android:textColor="@color/textcolor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutTransportation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100.0dip"
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="0.333"
+                        android:background="@color/blockcolor11"
+                        android:gravity="center"
+                        android:onClick="TransportationClick"
+                        android:orientation="vertical"
+                        android:padding="5.0dip"
+                        android:tag="6" >
+
+                        <ImageView
+                            android:id="@+id/btnTransportation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_train15" />
+
+                        <TextView
+                            android:id="@+id/txtTransportation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:tag="6"
+                            android:text="Phương tiện đi lại"
+                            android:textColor="@color/textcolor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutColours"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100.0dip"
+                        android:layout_margin="1.0dip"
+                        android:layout_weight="0.333"
+                        android:background="@color/blockcolor1"
+                        android:gravity="center"
+                        android:onClick="ColoursClick"
+                        android:orientation="vertical"
+                        android:padding="5.0dip"
+                        android:tag="10" >
+
+                        <ImageView
+                            android:id="@+id/btnColours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_paint41" />
+
+                        <TextView
+                            android:id="@+id/txtColours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="10"
+                            android:text="Màu sắc"
+                            android:textColor="@color/textcolor" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layoutCitiesandPrefecture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.333"
+                    android:background="@color/blockcolor5"
+                    android:gravity="center_vertical"
+                    android:onClick="CitiesandPrefectureClick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="11" >
+
+                    <ImageView
+                        android:id="@+id/btnCitiesandPrefecture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_town" />
+
+                    <TextView
+                        android:id="@+id/txtCitiesandPrefecture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="11"
+                        android:text="Tỉnh và thành phố"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutCountries"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.666"
+                    android:background="@color/blockcolor9"
+                    android:gravity="center"
+                    android:onClick="CountriesClick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="12" >
+
+                    <ImageView
+                        android:id="@+id/btnCountries"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_world8" />
+
+                    <TextView
+                        android:id="@+id/txtCountries"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="12"
+                        android:text="Quốc gia"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layoutTouristAttractions"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@color/blockcolor20"
+                    android:gravity="center_vertical"
+                    android:onClick="TouristAttractionsClick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="13" >
+
+                    <ImageView
+                        android:id="@+id/btnTouristAttractions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_small35" />
+
+                    <TextView
+                        android:id="@+id/txtTouristAttractions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="13"
+                        android:text="Danh lam thắng cảnh"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layoutFamily"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.333"
+                    android:background="@color/blockcolor4"
+                    android:gravity="center"
+                    android:onClick="FamilyClick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="14" >
+
+                    <ImageView
+                        android:id="@+id/btnFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_family4" />
+
+                    <TextView
+                        android:id="@+id/txtFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="14"
+                        android:text="Gia đình"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutDating"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.333"
+                    android:background="@color/blockcolor22"
+                    android:gravity="center"
+                    android:onClick="DatingClick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="15" >
+
+                    <ImageView
+                        android:id="@+id/btnDating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_love4" />
+
+                    <TextView
+                        android:id="@+id/txtDating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="15"
+                        android:text="Hẹn hò"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutEmergency"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.333"
+                    android:background="@color/blockcolor6"
+                    android:gravity="center"
+                    android:onClick="EmergencyClick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="16" >
+
+                    <ImageView
+                        android:id="@+id/btnEmergency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_first12" />
+
+                    <TextView
+                        android:id="@+id/txtEmergency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="16"
+                        android:text="Khẩn cấp"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layoutFeelingSick"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.666"
+                    android:background="@color/blockcolor15"
+                    android:gravity="center"
+                    android:onClick="FeelingSickClick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="17" >
+
+                    <ImageView
+                        android:id="@+id/btnFeelingSick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_stethoscope2" />
+
+                    <TextView
+                        android:id="@+id/txtFeelingSick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="17"
+                        android:text="Đau ốm"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutTongueTwisters"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="0.333"
+                    android:background="@color/blockcolor7"
+                    android:gravity="center_vertical"
+                    android:onClick="TongueTwistersClick"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:tag="18" >
+
+                    <ImageView
+                        android:id="@+id/btnTongueTwisters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_binoculars8" />
+
+                    <TextView
+                        android:id="@+id/txtTongueTwisters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="18"
+                        android:text="Câu đồng âm khác nghĩa"
+                        android:textColor="@color/textcolor" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/popupSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:orientation="vertical"
+        android:padding="15.0dip"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/txtPopupSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/ic_search_3_inverse"
+            android:inputType="text"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:selectAllOnFocus="true" />
+    </LinearLayout>
+
+</FrameLayout>

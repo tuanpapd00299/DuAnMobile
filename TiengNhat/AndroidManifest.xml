@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tiengnhat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/home_ic"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="tuan.Main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tuan.child.ChaoHoi_child"
+            android:label="@string/title_activity_chao_hoi__child" >
+        </activity>
+         <activity
+            android:name="tuan.child.HoiThoai_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.So_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.NgayGio_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.PhuongHuong_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.PhuongTien_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.DiaDiem_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.AnUong_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.MuaSam_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.MauSac_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.ThanhPho_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.QuocGia_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.DanhLam_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.GiaDinh_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.HenHo_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.KhanCap_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.DauOm_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.DongAm_child"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="tuan.child.TimKiem_child"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>
